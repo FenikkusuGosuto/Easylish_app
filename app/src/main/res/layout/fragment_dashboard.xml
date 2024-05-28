@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:src="@drawable/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/cat5"
+        android:onClick="catbtn2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cat5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mouse"
+        android:layout_width="59dp"
+        android:layout_height="72dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="mouse"
+        android:scaleType="fitXY"
+        android:src="@drawable/mouse"
+        app:layout_constraintBottom_toBottomOf="@id/present_btn"
+        app:layout_constraintTop_toTopOf="@id/present_btn"
+        app:layout_constraintStart_toEndOf="@id/present_btn" />
+
+    <ImageButton
+        android:id="@+id/past_btn"
+        android:onClick="startPastRules"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/past_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <ImageButton
+        android:id="@+id/future_btn"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:onClick="startFutureRules"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/future_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <ImageButton
+        android:id="@+id/present_btn"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:onClick="startPresentRules"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/present_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/future_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

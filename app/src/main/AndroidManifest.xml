@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/easylish_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/easylish_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Easylish"
+        tools:targetApi="31" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vazhno" />
+        <activity android:name=".present.exercises.correctprs" />
+        <activity android:name=".present.exercises.wrongprs" />
+        <activity android:name=".present.exercises.correctprc" />
+        <activity android:name=".present.exercises.wrongprc" />
+        <activity android:name=".present.exercises.correctprpс" />
+        <activity android:name=".present.exercises.wrongprpс" />
+        <activity android:name=".present.exercises.correctprp" />
+        <activity android:name=".present.exercises.wrongprp" />
+
+        <activity android:name=".past.exercises.correctpas" />
+        <activity android:name=".past.exercises.wrongpas" />
+        <activity android:name=".past.exercises.correctpac" />
+        <activity android:name=".past.exercises.wrongpac" />
+        <activity android:name=".past.exercises.correctpapс" />
+        <activity android:name=".past.exercises.wrongpapс" />
+        <activity android:name=".past.exercises.correctpap" />
+        <activity android:name=".past.exercises.wrongpap" />
+
+        <activity android:name=".future.exercises.correctfus" />
+        <activity android:name=".future.exercises.wrongfus" />
+        <activity android:name=".future.exercises.correctfuc" />
+        <activity android:name=".future.exercises.wrongfuc" />
+        <activity android:name=".future.exercises.correctfupс" />
+        <activity android:name=".future.exercises.wrongfupс" />
+        <activity android:name=".future.exercises.correctfup" />
+        <activity android:name=".future.exercises.wrongfup" />
+
+        <activity android:name=".present.PresentActivity" />
+        <activity android:name=".present.PresentExer" />
+        <activity android:name=".present.PresentSExer" />
+        <activity android:name=".present.PresentCExer" />
+        <activity android:name=".present.PresentPExer" />
+        <activity android:name=".present.PresentPCExer" />
+
+        <activity android:name=".future.FutureActivity" />
+        <activity android:name=".future.FutureExer" />
+        <activity android:name=".future.FutureSExer" />
+        <activity android:name=".future.FutureCExer" />
+        <activity android:name=".future.FuturePExer" />
+        <activity android:name=".future.FuturePCExer" />
+
+        <activity android:name=".past.PastActivity" />
+        <activity android:name=".past.PastExer" />
+        <activity android:name=".past.PastSExer" />
+        <activity android:name=".past.PastCExer" />
+        <activity android:name=".past.PastPExer" />
+        <activity android:name=".past.PastPCExer" />
+
+        <activity android:name=".present.exercises.PresentSimpleEx1" />
+        <activity android:name=".present.exercises.PresentSimpleEx2" />
+        <activity android:name=".present.exercises.PresentSimpleEx3" />
+        <activity android:name=".present.exercises.PresentSimpleEx4" />
+        <activity android:name=".present.exercises.PresentSimpleEx5" />
+        <activity android:name=".present.exercises.PresentContEx1" />
+        <activity android:name=".present.exercises.PresentContEx2" />
+        <activity android:name=".present.exercises.PresentContEx3" />
+        <activity android:name=".present.exercises.PresentContEx4" />
+        <activity android:name=".present.exercises.PresentContEx5" />
+        <activity android:name=".present.exercises.PresentPerEx1" />
+        <activity android:name=".present.exercises.PresentPerEx2" />
+        <activity android:name=".present.exercises.PresentPerEx3" />
+        <activity android:name=".present.exercises.PresentPerEx4" />
+        <activity android:name=".present.exercises.PresentPerEx5" />
+        <activity android:name=".present.exercises.PresentPerContEx1" />
+        <activity android:name=".present.exercises.PresentPerContEx2" />
+        <activity android:name=".present.exercises.PresentPerContEx3" />
+        <activity android:name=".present.exercises.PresentPerContEx4" />
+        <activity android:name=".present.exercises.PresentPerContEx5" />
+
+        <activity android:name=".future.exercises.FutureSimpleEx1" />
+        <activity android:name=".future.exercises.FutureSimpleEx2" />
+        <activity android:name=".future.exercises.FutureSimpleEx3" />
+        <activity android:name=".future.exercises.FutureSimpleEx4" />
+        <activity android:name=".future.exercises.FutureSimpleEx5" />
+        <activity android:name=".future.exercises.FutureContEx1" />
+        <activity android:name=".future.exercises.FutureContEx2" />
+        <activity android:name=".future.exercises.FutureContEx3" />
+        <activity android:name=".future.exercises.FutureContEx4" />
+        <activity android:name=".future.exercises.FutureContEx5" />
+        <activity android:name=".future.exercises.FuturePerEx1" />
+        <activity android:name=".future.exercises.FuturePerEx2" />
+        <activity android:name=".future.exercises.FuturePerEx3" />
+        <activity android:name=".future.exercises.FuturePerEx4" />
+        <activity android:name=".future.exercises.FuturePerEx5" />
+        <activity android:name=".future.exercises.FuturePerContEx1" />
+        <activity android:name=".future.exercises.FuturePerContEx2" />
+        <activity android:name=".future.exercises.FuturePerContEx3" />
+        <activity android:name=".future.exercises.FuturePerContEx4" />
+        <activity android:name=".future.exercises.FuturePerContEx5" />
+
+        <activity android:name=".past.exercises.PastSimpleEx1" />
+        <activity android:name=".past.exercises.PastSimpleEx2" />
+        <activity android:name=".past.exercises.PastSimpleEx3" />
+        <activity android:name=".past.exercises.PastSimpleEx4" />
+        <activity android:name=".past.exercises.PastSimpleEx5" />
+        <activity android:name=".past.exercises.PastContEx1" />
+        <activity android:name=".past.exercises.PastContEx2" />
+        <activity android:name=".past.exercises.PastContEx3" />
+        <activity android:name=".past.exercises.PastContEx4" />
+        <activity android:name=".past.exercises.PastContEx5" />
+        <activity android:name=".past.exercises.PastPerEx1" />
+        <activity android:name=".past.exercises.PastPerEx2" />
+        <activity android:name=".past.exercises.PastPerEx3" />
+        <activity android:name=".past.exercises.PastPerEx4" />
+        <activity android:name=".past.exercises.PastPerEx5" />
+        <activity android:name=".past.exercises.PastPerContEx1" />
+        <activity android:name=".past.exercises.PastPerContEx2" />
+        <activity android:name=".past.exercises.PastPerContEx3" />
+        <activity android:name=".past.exercises.PastPerContEx4" />
+        <activity android:name=".past.exercises.PastPerContEx5" />
+
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".present.rules.PresentSimple.PresentSimpleRules" />
+        <activity android:name=".present.rules.PresentSimple.PresentSimpleRuleTwo" />
+        <activity android:name=".present.rules.PresentSimple.PresentSimpleRuleThree" />
+        <activity android:name=".present.rules.PresentPerfect.PresentPerfectRules" />
+        <activity android:name=".present.rules.PresentPerfect.PresentPerfectRuleTwo" />
+        <activity android:name=".present.rules.PresentPerfect.PresentPerfectRuleThree" />
+        <activity android:name=".present.rules.PresentContinous.PresentContinousRules" />
+        <activity android:name=".present.rules.PresentContinous.PresentContinousRuleTwo" />
+        <activity android:name=".present.rules.PresentContinous.PresentContinousRuleThree" />
+        <activity android:name=".present.rules.PresentPerfectContinous.PresentPerfectContinousRules" />
+        <activity android:name=".present.rules.PresentPerfectContinous.PresentPerfectContinousRuleTwo" />
+        <activity android:name=".present.rules.PresentPerfectContinous.PresentPerfectContinousRuleThree" />
+
+        <activity android:name=".future.rules.FutureSimple.FutureSimpleRules" />
+        <activity android:name=".future.rules.FutureSimple.FutureSimpleRuleTwo" />
+        <activity android:name=".future.rules.FutureSimple.FutureSimpleRuleThree" />
+        <activity android:name=".future.rules.FuturePerfect.FuturePerfectRules" />
+        <activity android:name=".future.rules.FuturePerfect.FuturePerfectRuleTwo" />
+        <activity android:name=".future.rules.FuturePerfect.FuturePerfectRuleThree" />
+        <activity android:name=".future.rules.FutureContinous.FutureContinousRules" />
+        <activity android:name=".future.rules.FutureContinous.FutureContinousRuleTwo" />
+        <activity android:name=".future.rules.FutureContinous.FutureContinousRuleThree" />
+        <activity android:name=".future.rules.FuturePerfectContinous.FuturePerfectContinousRules" />
+        <activity android:name=".future.rules.FuturePerfectContinous.FuturePerfectContinousRuleTwo" />
+        <activity android:name=".future.rules.FuturePerfectContinous.FuturePerfectContinousRuleThree" />
+
+        <activity android:name=".past.rules.PastSimple.PastSimpleRules" />
+        <activity android:name=".past.rules.PastSimple.PastSimpleRuleTwo" />
+        <activity android:name=".past.rules.PastSimple.PastSimpleRuleThree" />
+        <activity android:name=".past.rules.PastSimple.PastSimpleRuleFour" />
+        <activity android:name=".past.rules.PastPerfect.PastPerfectRules" />
+        <activity android:name=".past.rules.PastPerfect.PastPerfectRuleTwo" />
+        <activity android:name=".past.rules.PastPerfect.PastPerfectRuleThree" />
+        <activity android:name=".past.rules.PastPerfect.PastPerfectRuleFour" />
+        <activity android:name=".past.rules.PastContinous.PastContinousRules" />
+        <activity android:name=".past.rules.PastContinous.PastContinousRuleTwo" />
+        <activity android:name=".past.rules.PastContinous.PastContinousRuleThree" />
+        <activity android:name=".past.rules.PastPerfectContinous.PastPerfectContinousRules" />
+        <activity android:name=".past.rules.PastPerfectContinous.PastPerfectContinousRuleTwo" />
+        <activity android:name=".past.rules.PastPerfectContinous.PastPerfectContinousRuleThree" />
+
+    </application>
+
+</manifest>

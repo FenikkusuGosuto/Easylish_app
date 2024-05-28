@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="245dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <ImageButton
+        android:id="@+id/cat2"
+        android:onClick="catbtn3"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cat2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:src="@drawable/pen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <ImageView
+        android:id="@+id/paws"
+        android:layout_width="204dp"
+        android:layout_height="212dp"
+        android:src="@drawable/paws"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:onClick="steps"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cat2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ImageButton
+        android:id="@+id/future_btn"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:onClick="startFutureExer"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/future_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+    <ImageButton
+        android:id="@+id/present_btn"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:onClick="startPresentExer"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/present_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/future_btn" />
+
+    <ImageButton
+        android:id="@+id/past_btn"
+        android:onClick="startPastExer"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/past_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
